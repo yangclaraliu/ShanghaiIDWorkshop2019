@@ -84,7 +84,8 @@ library(writexl)
 
 download.file(url = "https://github.com/yangclaraliu/ShanghaiR2019/raw/master/X3.xlsx", destfile = "X3.xlsx", mode = "wb")
 lvl2_3["X3"] <- read_excel("X3.xlsx", col_names = F)
-Sys.setlocale("LC_ALL","Chinese")
+#Sys.setlocale("LC_ALL","Chinese")
+#Encoding(lvl2_3$X3)
 lvl2_3
 xlsx::write.xlsx(lvl2_3, file = "lvl2_3.xlsx")
 writexl::write_xlsx(lvl2_3, path = "lvl2_3.xlsx")
@@ -258,10 +259,11 @@ ggplot(tmp, aes(x = time,
                 group = state, 
                 color = state)) +
   geom_line()+
-  labs(x = "Time", y = "Proportion") +
-  theme(legend.position = "bottom") +
+  labs(x = "Time", y = "Proportion")  +
   theme_bw() +
-  facet_grid(rows = vars(state))
+  facet_grid(rows = vars(state))+
+  theme(legend.position = "bottom")#,
+#        text = element_text(family = "Garamond", size = 14))
 
 ggsave("sample.png")
 
