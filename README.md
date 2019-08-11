@@ -1,7 +1,7 @@
 # Shanghai Infectious Disease Workshop at Fudan University
 ### August, 2019
 
-## Software Requirement
+## Software Requirements
 - R: https://cran.r-project.org/
 - Rstudio: https://www.rstudio.com/products/rstudio/download/#download
 - R packages: tidyverse, EpiDynamics, readxl, writexl (<- case sensitive)
