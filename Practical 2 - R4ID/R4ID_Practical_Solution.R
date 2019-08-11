@@ -37,7 +37,8 @@ for(i in 1:nrow(beta)){
 res
 
 #### Step 3 ####
-# Using ggplot, can you plot the trajectory of S, I, and R compartments for all provinces in one plot respectively (i.e. 3 figures in total)?  
+# Using ggplot, can you plot the trajectory of S, I, and R compartments for all provinces in one plot respectively (i.e. 3 figures in total)? Please try to save res as an xlsx file and the plot as a png file.
+
 res <- bind_rows(res)
 res <- gather(res, key = state, value = value, -prv, -beta, -time)
 res$state <- factor(res$state, levels = c("S","I","R"),
