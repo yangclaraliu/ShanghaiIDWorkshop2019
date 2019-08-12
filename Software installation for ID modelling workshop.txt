@@ -1,0 +1,20 @@
+Software installation for ID modelling workshop
+
+Software
+
+R: https://cran.r-project.org/
+Rstudio: https://www.rstudio.com/products/rstudio/download/#download
+R packages: tidyverse, EpiDynamics, readxl, xlsx
+Latest version of Java: https://www.java.com/en/download/windows-64bit.jsp
+Figtree: https://github.com/rambaut/figtree/releases/tag/v1.4.4
+Beast: https://beast.community/install_on_windows
+Tracer: https://github.com/beast-dev/tracer/tree/master/release
+
+Practicals
+
+Practical materials (together with slides and handouts) are available at: https://github.com/yangclaraliu/ShanghaiIDWorkshop2019
+The first practical (measles.xlsx) has been e-mailed to you by Dr. Mengcen Qian. The questions (“Modelling for HE - Inf Dis Modelling – practical.doc”) are available on the github.
+
+Reminder: Wireless internet name: iFudan; username: jmkcl password: jmkc001
+
+Members of the teaching team will circulate to ensure that this is installed correctly, and to help you if you are having any problems.
