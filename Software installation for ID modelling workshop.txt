@@ -8,7 +8,7 @@ R packages: tidyverse, EpiDynamics, readxl, xlsx
 Latest version of Java: https://www.java.com/en/download/windows-64bit.jsp
 Figtree: https://github.com/rambaut/figtree/releases/tag/v1.4.4
 Beast: https://beast.community/install_on_windows
-Tracer: https://github.com/beast-dev/tracer/tree/master/release
+Tracer: https://github.com/beast-dev/tracer/releases/latest
 
 Practicals
 
