@@ -17,14 +17,14 @@ beta[beta$beta>2,]
 class(beta)
 # exercise 3: Could you create a histogram of all the beta estimates?
 # hint: hist
-hist(beta$beta, xlab = "Beta", main = "")
+hist(beta$beta, xlab = "Beta", main = "", breaks = 2)
 
 ### Step 2 #### 
 # Assuming the total population is 1, and infection is introduced by having 1/10^6 of the total population at the beginning (<- this should be the same as the example during lecture), using the beta file provided above and observation period of 70 days, could you run a simple SIR model from the package "EpiDyanmics" for all provinces and save their results as a list?
 # hint: loop
 library(EpiDynamics)
-
 res <- list() #in order to assign a value into a list, a list must first exists
+
 for(i in 1:nrow(beta)){
   parameters <- c(beta = beta$beta[i], gamma = 0.15)
   initials <- c(S = 1 - 1e-06, I = 1e-06, R = 0)
@@ -44,6 +44,7 @@ res <- gather(res, key = state, value = value, -prv, -beta, -time)
 res$state <- factor(res$state, levels = c("S","I","R"),
                     labels = c("Susceptible","Infectious","Recovered"))
 
+x11()
 ggplot(res, aes(x = time, y = value, group = prv, color = state, alpha = beta))+
   geom_line()+
   theme_bw()+

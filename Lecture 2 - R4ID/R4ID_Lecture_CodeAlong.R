@@ -105,11 +105,11 @@ plot(chn)
 # chn <- st_as_sf(chn)
 # t1 <- Sys.time(); chn;Sys.time()-t1 #voila!On my computer, this takes about 0.3 secs
 
-# install.packages("mapview")
-# library(mapview)
-# mapview(chn, zcol = "AREA")
+install.packages("mapview")
+library(mapview)
+mapview(chn, zcol = "AREA")
 
-#####Section 2.2: Tidy (and Transform)####
+#######################################################Section 2.2: Tidy (and Transform)####
 # class conversion
 # slide 34
 as.character(12)
@@ -263,8 +263,12 @@ ggplot(tmp, aes(x = time,
   labs(x = "Time", y = "Proportion")  +
   theme_bw() +
   facet_grid(rows = vars(state))+
-  theme(legend.position = "bottom")#,
-#        text = element_text(family = "Garamond", size = 14))
+  theme(legend.position = "bottom")
+
+ggplot(tmp, aes(x = time, 
+                y = proportion)) +
+  geom_area(aes(fill = state), position = position_stack(reverse = T))
+
 
 ggsave("sample.png")
 

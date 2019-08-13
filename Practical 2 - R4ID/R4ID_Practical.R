@@ -1,4 +1,4 @@
-# You are a public health professional in China who are concerned about Summeritis Since the population of China has never been exposed before, the potential impacts of the disease are unknown. You already known something about this Summeritis from another country:
+# You are a public health professional in China who are concerned about Birdy Pox Since the population of China has never been exposed before, the potential impacts of the disease are unknown. You already known something about Birdy Pox from another country:
 # beta = 2;
 # gamma = 0.15. 
 # However, you have some approximated betas for China by province. You would like to visualize some endpoints that you are interested in.
@@ -23,7 +23,7 @@ beta <- ????
 # hint: loop
 
 res <- list() #in order to assign a value into a list, a list must first exists
-for(????){
+for(i in ????){
   parameters <- ????
   initials <- ????
   res[[i]] <- ????
