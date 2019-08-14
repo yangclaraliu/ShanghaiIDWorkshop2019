@@ -12,4 +12,4 @@
 ## Useful Learning Material
 - https://homepages.warwick.ac.uk/~masfz/ModelingInfectiousDiseases/index.html
 - https://github.com/oswaldosantos/EpiDynamics
-
+- https://www.springer.com/gp/book/9783319974866
